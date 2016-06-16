@@ -1,0 +1,34 @@
+﻿<TypeDefinitions>
+  <EntityTypes>
+    <ClassTypes>
+      <ClassType ID="MPID.Class Name.Class" Base="Windows!Microsoft.Windows.ApplicationComponent"
+          Accessibility="Public" Abstract="false" Hosted="true" Singleton="false">
+        <Property ID="Property Name" Key="true" Type="string" />
+      </ClassType>
+    </ClassTypes>
+    <RelationshipTypes>
+      <RelationshipType ID="MPID.Source Class nameHostsClass Name.Relationship" Accessibility="Public" Abstract="false" Base="System!System.Hosting" >
+        <Source ID="Source" Type="Source Class" />
+        <Target ID="Target" Type="MPID.Class Name.Class"/>
+      </RelationshipType>
+    </RelationshipTypes>
+  </EntityTypes>
+</TypeDefinitions>
+<LanguagePacks>
+  <LanguagePack ID="ENU" IsDefault="true">
+    <DisplayStrings>
+      <DisplayString ElementID="MPID.Class Name.Class">
+        <Name>Class Display Name</Name>
+        <Description>Class description</Description>
+      </DisplayString>
+      <DisplayString ElementID="MPID.Class Name.Class" SubElementID="Property Name">
+        <Name>Property Name</Name>
+        <Description>Property Description</Description>
+      </DisplayString>
+      <DisplayString ElementID="MPID.Source Class nameHostsClass Name.Relationship">
+        <Name>Source Class name Hosts Class Name</Name>
+        <Description>Source Class name Hosts Class Name</Description>
+      </DisplayString>
+    </DisplayStrings>
+  </LanguagePack>
+</LanguagePacks>
